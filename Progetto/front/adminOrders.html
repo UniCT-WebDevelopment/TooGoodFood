@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel=" stylesheet" href="/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="/adminHome" class="logo">Admin<span>Panel</span></a>
+
+            <nav class="navbar">
+                <a href="/adminHome">products</a>
+                <a href="/adminIngredients">ingredients</a>
+                <a href="/adminOrders">orders</a>
+                <a href="/adminMessages">notices</a>
+                <a href="/userMessages">messages</a>
+
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+            </div>
+
+            <div class="profile">
+
+                <div class="flex">
+                    <a class="delete-btn">Logout</a>
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+
+    <section class="orders">
+
+        <h1 class="title">orders view</h1>
+
+        <div class="box-container" id="orders-container">
+
+            <!-- <div class="box">
+                <h3>placed on: <span>15-08-2022</span></h3>
+
+                <p>address: <span>via case nuove 188, primo piano</span></p>
+                <p>products: <span>main dish 01 - delicious pizza 02 (1) - delicious dessert 02</span></p>
+                <p>payment method : <span>cash on delivery</span></p>
+                <h3>payment status : <span style="color: var(--red);">pending</span></h3>
+            </div> -->
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <div class="loader">
+
+        <img src="../images/loader.gif" alt="">
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/adminOrders.js"></script>
+</body>
+
+</html>

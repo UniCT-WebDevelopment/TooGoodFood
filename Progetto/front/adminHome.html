@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel=" stylesheet" href="/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="/adminHome" class="logo">Admin<span>Panel</span></a>
+
+            <nav class="navbar">
+                <a href="/adminHome">products</a>
+                <a href="/adminIngredients">ingredients</a>
+                <a href="/adminOrders">orders</a>
+                <a href="/adminMessages">notices</a>
+                <a href="/userMessages">messages</a>
+
+
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+            </div>
+
+            <div class="profile">
+
+                <div class="flex">
+                    <a class="delete-btn">Logout</a>
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+
+    <section class="form-container">
+
+        <form action="" method="post" id="registerForm">
+
+            <h3>add a new product</h3>
+            <input type="text" id="name" name="name" required placeholder="product name: pizza with pepperoni" class="box" maxlength="50">
+
+            <input type="text" id="category" name="category" required placeholder="category: fast food-main dishes-drinks-dessert" class="box" maxlength="50">
+            <input type="number" id="price" name="price" required placeholder="product price: 5" class="box" maxlength="50">
+            <input type="text" id="ingredients" name="ingredients" required placeholder="product ingredients(g): pizza_dough:220 pepperoni:50 " class="box">
+
+
+            <input type="file" id="image" name="image" required placeholder="product image in uploaded_img: pizza.png" class="box" accept="image/*">
+            <label for="img">choose image from uploaded_img folder</label>
+
+            <input type="button" id="submitInput" value="add product" class="btn" name="submit">
+        </form>
+    </section>
+
+
+    <section class="products">
+        <h1 class="title">Products Added</h1>
+
+        <div class="box-container" id="contenitoreProductsHome">
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <div class="loader">
+
+        <img src="../images/loader.gif" alt="">
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/adminHome.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+<body>
+    <header class="header" unclickable="true">
+        <section class="flex">
+            <a href="/" class="logo">Too Good Food😋</a>
+            <nav class="navbar">
+                <a href="/">Home</a>
+                <a href="about">About</a>
+                <a href="menu">Menu</a>
+                <a href="orders">Orders</a>
+                <a href="contact">Contact</a>
+            </nav>
+
+            <div class="icons">
+                <a href="search"><i class="fas fa-search"></i></a>
+                <a href="cart"><i class="fas fa-shopping-cart"></i></a>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+
+            </div>
+
+            <div class="profile">
+                <div class="flex">
+                    <a href="profile" class="btn">Profile</a>
+                    <a class="delete-btn">Logout</a>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+
+
+
+
+
+    <section class="products">
+
+        <h1 class="title">your cart</h1>
+
+        <div class="cart-total">
+            <p>cart total: <span id="cart-total-span"></span></p>
+
+
+
+            <div class="select_label">
+                <label for="consumazione">Where will you be eating today?</label>
+                <select name="consumazione" id="consumazione">Ciao
+                <option value="Eat In">Eat In</option>
+                <option value="Take Away">Take Away</option>
+                <option value="Home Delivery">Home Delivery</option>
+            </select>
+            </div>
+
+
+
+            <a id="orderBTN" class="btn">proceed to order</a>
+        </div>
+
+        <div class="box-container" id="box-container">
+
+            <!-- <form action="" method="post" class="box">
+                <button type="submit" class="fas fa-eye" name="quick-view"></button>
+                <button type="submit" class="fas fa-times" name="delete" onclick="return confirm('delete this product? ');"></button>
+
+                <img src="../uploaded_img/dish-1.png" alt=" ">
+                <div class="name ">main dish 01</div>
+                <div class="flex ">
+                    <div class="price "><span>$</span>3</div>
+                    <input type="number " name="qty " class="qty " min="1 " max="99 " value="1 " onkeypress="if(this.value.length==2 ) return false; ">
+                    <button type="submit" class="fas fa-edit"></button>
+                </div>
+                <div class="sub-total">sub total: <span>€3</span></div>
+            </form> -->
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+    <footer class="footer ">
+        <section class="grid ">
+            <div class="box ">
+                <img src="../images/email-icon.png " alt="Email Icon ">
+                <h3>our email</h3>
+                <a href="mailto:giovanni@gmail.com ">giovanni@gmail.com</a>
+
+            </div>
+
+            <div class="box ">
+                <img src="../images/clock-icon.png " alt="Clock Icon ">
+                <h3>Opening Hours</h3>
+                <p>00:07am to 00:10pm</p>
+            </div>
+
+            <div class="box ">
+                <img src="../images/map-icon.png " alt="Map Icon ">
+                <h3>Our Address</h3>
+                <p>Via Case Nuove 122</p>
+            </div>
+
+            <div class="box ">
+                <img src="../images/phone-icon.png " alt="Phone Icon ">
+                <h3>Our Number</h3>
+                <a href="tel:3450896182 ">3450896182</a>
+            </div>
+
+
+        </section>
+
+        <div class="credit ">created by<span> giovanni imbesi</span></div>
+    </footer>
+
+
+
+
+
+
+    <div class="loader">
+        <img src="../images/loader.gif" alt="">
+    </div>
+
+    <script src="/js/cart.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="/js/script.js "></script>
+</body>
+
+</html>
