@@ -11,10 +11,10 @@ Before starting, is required to install XAMP/MAMP and create a database called f
 
 ```
 git clone https://github.com/Giovannimbesi25/Reddit-Post-Classificator.git
-cd TooGoodFood/
+cd TooGoodFood/Progetto
 node app.js
 
 ```
-Then you just need to access localhost:5000 by your browser. 
+Then you just need to access localhost:5000 by your browser.  <br>
 Port number, database config and ipServer are stored in  the config.json file and can be easily changed.
 
