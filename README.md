@@ -15,6 +15,6 @@ cd TooGoodFood/
 node app.js
 
 ```
-Then you just need to access localhost:5000 by your browser. Port 5000 can be changed by editing the port.txt file.
-
+Then you just need to access localhost:5000 by your browser. 
+Port number, database config and ipServer are stored in  the config.json file and can be easily changed.
 
